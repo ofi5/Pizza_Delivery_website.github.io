@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>
+            Food Website
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+
+
+        <!-- Navigation -->
+
+
+        <div id="nav-box">
+            <nav> 
+                <h1>Pizza Delivery Website</h1>
+                <div class="search-bar">
+                    <!-- <input id="search-bar-input"> -->
+                    <!-- <button id="btn">🔍</button> -->
+                </div>
+                <div >
+                    <ul class="nav-menu">
+                        <!-- <li class="nav-menu-pills">offers</li> -->
+                        <li class="nav-menu-pills" id="cart-btn-menu">Cart</li>
+                        <li class="nav-menu-pills">My Account</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        <!-- Body (3 columns)  side menu, check, cartbox-->
+
+
+        <div class="body-main" id="clear">
+
+            
+            <!--side menu  -->
+            
+            <ul class="side-menu">
+                <!-- <li class="side-menu-keys"><a href="#">Home</a></li> -->
+                <!-- <li class="side-menu-keys" id="cart-btn-menu">Cart</li> -->
+                <!-- <li class="side-menu-keys"><a href="#">Your Orders</a></li> -->
+                <li class="side-menu-keys" id="wish">Wishlist</li>
+
+                <!-- <li class="side-menu-keys"><a href="#">Help</a></li> -->
+
+                <div id="wishlist">
+
+                </div>
+            </ul>
+
+            <!-- check -->
+
+            <div id="check">
+                <p class="sub-heading">VEG PIZZA</p>
+                <div class="main-menu" id="veg"> 
+                
+                </div> 
+
+                <p class="sub-heading">NON VEG PIZZA</p>
+                <div class="main-menu" id="nonveg"> 
+                
+                </div>       
+
+                <P class="sub-heading">SIDES</P>
+                <div class="main-menu" id="sides"> 
+                </div>            
+                    
+            
+            </div>
+
+            
+
+            <!-- cart -->
+
+            <div class="cart-box">
+            
+                <p id="cart">CART ITEMS</p>
+                <div id="total"> </div>
+            </div>
+
+                
+        </div>
+
+
+        <div id="cart-items" class="cart-toggle">
+            <p id="cart-title">Cart Items</p>
+            <p id="total-amount">Total Amount</p>
+            <table>
+                <thead>
+                    <td>Item</td>
+                    <td>Name</td>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                </thead>
+                <tbody id="table-body">
+
+                </tbody>
+            </table> 
+            <div id="total-amt"></div>
+            <button id="checkout-btn">CHECKOUT</button>
+        </div>
+
+
+
+        <!-- checkout page -->
+        <div id="checkout-page">
+           
+        </div>
+
+
+       
+        <!-- footer -->
+        <footer>
+
+           
+        </footer>
+        
+        <script src="index2.js" type="module"></script>
+                
+              
+  
+    </body>
+</HTML>
