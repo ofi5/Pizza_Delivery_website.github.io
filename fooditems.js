@@ -1,3 +1,9 @@
+
+
+// js file having array of fooditem objects which will be used for the website menu.
+
+
+
 const foodItems = [
     {
         id: 1 ,
