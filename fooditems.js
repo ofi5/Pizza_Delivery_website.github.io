@@ -1,6 +1,6 @@
 
 
-// js file having array of fooditem objects which will be used for the website menu.
+// js file having array of food item objects which will be used for the website menu.
 
 
 

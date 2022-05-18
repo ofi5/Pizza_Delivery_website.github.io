@@ -9,6 +9,9 @@ import {foodItems} from "./fooditems.js";
 
 console.log(foodItems);
 
+
+// function to display the menu.
+
 function displayItems(){
     let veg = document.getElementById("veg");
     let NonVeg = document.getElementById("nonveg");
@@ -162,6 +165,9 @@ document.querySelectorAll(".cart-btn").forEach(item => {
 let cartData = [];
 
 
+// function which is used to add to cart an item from menu.
+
+
 function addToCart() {
 
     document.getElementById("cart-btn-menu").innerHTML= "Items in Cart";
@@ -189,6 +195,8 @@ function addToCart() {
     cartItems();
 
 }
+
+// function to display items in the cart.
 
 function menuCart() {
 
@@ -223,6 +231,8 @@ function menuCart() {
 
     
 }
+
+// function which will display cart items along with price and quantity at checkout page.
 
 function cartItems() {
     let tableBody = document.getElementById("table-body");
@@ -281,6 +291,9 @@ function cartItems() {
 
 document.getElementById("cart-btn-menu").addEventListener("click",openCart);
 
+
+// function to view checkout page when cart is full
+
 function openCart() {
     if (cartData.length > 0){
     document.getElementById("cart-btn-menu").innerText = "Menu";
@@ -291,6 +304,7 @@ function openCart() {
     }
 }
 
+//  function to decrease qunatity of food item during checkout
 
 function decrementItem() {
     let decName = this.parentNode.parentNode.childNodes[1].innerText;
@@ -322,6 +336,9 @@ function decrementItem() {
 
 }
 
+
+//  function to increase qunatity of food item during checkout
+
 function incrementItem() {
       
         let incName = this.parentNode.parentNode.childNodes[1].innerText;
@@ -335,6 +352,8 @@ function incrementItem() {
 
 }
 
+
+//  function to calculate total price of food items during checkout
 function totalAmt() {
     let priceArray = cartData.map(item =>item.cost);
     console.log(priceArray);
@@ -352,6 +371,9 @@ totalAmt();
 document.getElementById("checkout-btn").addEventListener("click",checkout);
 
 let checkoutPage = document.getElementById("checkout-page");
+
+// function to checkout after finalising cart items and going to payment page.
+
 function checkout(){
     document.getElementById("cart-items").classList.toggle("cart-toggle");
        
@@ -476,7 +498,8 @@ let addressArray=[];
 
 
 
-// function to store user address 
+// function to store user address.
+
 function storeAddress() {
 
     let userData = {};
@@ -509,6 +532,7 @@ function storeAddress() {
     }
 }
 
+// function to complete order 
 function orderComplete() {
 
     let namedata = document.getElementById("fullname");
@@ -538,6 +562,8 @@ function orderComplete() {
 let wishlistData = [];
 let tempWish = []
 
+
+// function to add items to wishlist
 function wishlist() {
     
 
@@ -562,6 +588,8 @@ function wishlist() {
 }
 
 // document.getElementById("wish").addEventListener("click", wishbox);
+
+// function to display wishlist.
 
 function wishbox() {
  
@@ -599,7 +627,7 @@ function wishbox() {
     
 }
 
-
+// function to remove item from wishlist.
 function remitem() {
     
     let deletewish = this.parentNode.childNodes[1].innerHTML;
