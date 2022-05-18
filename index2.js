@@ -170,7 +170,7 @@ let cartData = [];
 
 function addToCart() {
 
-    document.getElementById("cart-btn-menu").innerHTML= "Items in Cart";
+    document.getElementById("cart-btn-menu").innerHTML= "checkout";
 
     let itemToAdd = this.parentNode.childNodes[3].innerText;
     console.log(itemToAdd);
